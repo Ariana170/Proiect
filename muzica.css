@@ -1,0 +1,22 @@
+body{
+    background-color:#FDCEB9;
+    margin: 0;
+  }
+  a{
+    color: #D885A3;
+    text-decoration: none;
+  }
+  #head{
+    text-align: center;
+    color: #655D8A;
+    background-color: #D885A3;
+    padding: 200px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Monaco", monospace;
+    position: sticky;
+    font-size: 25px;
+  }
+  h2{
+    text-align: center;
+  }
