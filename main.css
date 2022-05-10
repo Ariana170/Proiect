@@ -43,7 +43,7 @@ body{
     position: relative;
     text-align: center;
     font-size: 20px;
-    padding: 10px 90px;
+    margin: 10px 90px;
   }
   .elemsub{
     background-color: #655D8A;
@@ -51,7 +51,7 @@ body{
     position: relative;
     text-align: center;
     font-size: 20px;
-    padding: 10px 90px;
+    margin: 10px 90px;
   }
   .elem:hover{
     background-color:#FDCEB9;
@@ -61,7 +61,7 @@ body{
   }
   .subelem {
     background-color:#FDCEB9;
-    display: none;
+    display: block;
     position: absolute;
     list-style-type: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

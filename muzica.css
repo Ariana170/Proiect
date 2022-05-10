@@ -19,4 +19,23 @@ body{
   }
   h2{
     text-align: center;
+    color: #655D8A;
+  }
+  .album{
+    border: 5px solid #7897AB;
+    width: 50%;
+    padding: 10px;
+    background-color: #fcd9cb;
+    margin: 50px auto;
+  }
+  h3{
+    text-align: center;
+    color: #655D8A;
+  }  
+  img{
+    border: 5px solid #7897AB;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
