@@ -88,7 +88,19 @@ body{
   .imagini img{
     border: 5px solid #7897AB;
     width: 300px;
+    z-index: 8;
+  }
+  #galerie img{
+    border: 5px solid #7897AB;
+    width: 150px;
+    z-index: 8;
+    margin: 10px;
+  }
+  #galerie img:hover{
+    width: 200px;
     z-index: 9;
+    border: 5px solid #7897AB;
+    position: absolute;
   }
   .dreapta{
     float: right;
@@ -105,6 +117,14 @@ body{
     margin-left: 12%;
     margin-right: 12% ;
   }
+  #galerie{
+    border: 5px solid #7897AB;
+    max-width: 75%;
+    margin-top: 50px;
+    margin-left: 12%;
+    margin-right: 12%;
+    position: relative;
+  }
   .paragraf{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -119,4 +139,15 @@ body{
   }
   #pr3{
     min-height: 480px;
+  }
+  .subtitlu{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #655D8A; 
+  }
+  p{
+    color:  #2d2745;
+    font-size: medium;
   }
