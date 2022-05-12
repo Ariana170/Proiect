@@ -6,16 +6,24 @@ body{
     color: #D885A3;
     text-decoration: none;
   }
+  #head a{
+    color: #655D8A;
+    text-decoration: none;
+  }
   #head{
     text-align: center;
     color: #655D8A;
     background-color: #D885A3;
-    padding: 200px;
     font-style: italic;
     font-weight: bold;
     font-family: "Monaco", monospace;
     position: sticky;
+    width: 100%;
+    top: 0;
+    transition: 0.2s;
     font-size: 25px;
+    padding: 1px;
+    z-index: 10;
   }
   h2{
     text-align: center;
