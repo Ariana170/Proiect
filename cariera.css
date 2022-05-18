@@ -25,10 +25,7 @@ body{
     padding: 1px;
     z-index: 10;
   }
-  h2{
-    text-align: center;
-    color: #655D8A;
-  }
+
   #menu{
     position: sticky;
     background-color: #655D8A;
@@ -96,21 +93,36 @@ body{
   .elemsub:hover .subelem {
     display: block;
   }
-  .album{
-    border: 5px solid #7897AB;
-    width: 50%;
-    padding: 10px;
-    background-color: #fcd9cb;
-    margin: 50px auto;
+  @keyframes myfirst {
+    0% {
+      left: 10%;
+    }
+    100% {
+      left: 80%;
+    }
   }
-  h3{
-    text-align: center;
-    color: #655D8A;
-  }  
-  img{
-    border: 5px solid #7897AB;
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .rotation {
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+    width: 100px;
+  }
+  table, th, td {
+    border: 2px solid #7897AB;
+    border-collapse: collapse;
+  }
+  th {
+    background-color: #D885A3;
+  }
+  table{
+    font-size: small;
+  }
+  tr:hover{
+    background-color: #fcd9cb;;
+  }
+  .subtitlu{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #655D8A; 
   }

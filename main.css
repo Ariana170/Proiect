@@ -2,6 +2,11 @@ body{
     background-color:#FDCEB9;
     margin: 0;
   }
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: #fcd9cb;;
+    }
+  }
   a{
     color: #D885A3;
     text-decoration: none;
@@ -25,7 +30,6 @@ body{
     padding: 1px;
     z-index: 10;
   }
-
   #menu{
     position: sticky;
     background-color: #655D8A;
@@ -103,6 +107,8 @@ body{
     width: 150px;
     z-index: 8;
     margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
   }
   #galerie img:hover{
     width: 200px;
@@ -118,6 +124,7 @@ body{
     float: left;
     margin: 10px;
   }
+
   .imagini div{
     border: 5px solid #7897AB;
     max-width: 75%;
@@ -146,7 +153,10 @@ body{
     min-height: 235px;
   }
   #pr3{
-    min-height: 480px;
+    min-height: 460px;
+  }
+  #desc{
+    text-align:right;
   }
   .subtitlu{
     margin-left: 50px;
@@ -169,4 +179,59 @@ body{
     margin-left: 20%;
     width: 560px; 
     height: 315px; 
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px  50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows:   50px 50px 50px  50px 50px 50px 50px 50px 50px 50px;
+    height: 450px;
+    width: 500px;
+    margin-left: 33%;
+  }
+  .grid-container div{
+    border: 5px solid #7897AB;
+  }
+  p{
+      text-align: center;
+  }
+  img{
+      object-fit: fill;
+  }
+  .mare img{
+      height: 440px;
+      width: 290px;
+      object-fit: fill;
+  }
+  .mic img{
+      height: 140px;
+      width: 90px;
+      object-fit: fill;
+  }
+  .grid-container div:nth-child(1){
+      grid-row: 1/ 10;
+      grid-column: 1/ span 6;
+  }
+  .grid-container div:nth-child(2){
+      grid-row: 1/ span 3;
+      grid-column: 7/ span 2;
+  }
+  .grid-container div:nth-child(3){
+      grid-row: 4 /span 3 ;
+      grid-column:  7/ span 2;
+  }
+  .grid-container div:nth-child(4){
+      grid-row: 7/ span 3;
+      grid-column:  7/ span 2;
+  }
+  .grid-container div:nth-child(5){
+      grid-row: 1/ span 3;
+      grid-column: 9/ span 2;
+  }
+  .grid-container div:nth-child(6){
+      grid-row: 4 /span 3 ;
+      grid-column:  9/ span 2;
+  }
+  .grid-container div:nth-child(7){
+      grid-row: 7/ span 3;
+      grid-column:  9/ span 2;
   }
