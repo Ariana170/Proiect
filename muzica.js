@@ -1,5 +1,5 @@
 
-
+h = document.getElementsByTagName('h3');
   for( var i=0; i<h.lenght; i++)
     h[i].addEventListener('click', function(){schimbaCuloare(event);});
 
