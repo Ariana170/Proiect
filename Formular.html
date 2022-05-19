@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Asus user\Desktop\Proiect_T_W\form.css" />
+        <style>
+            body{
+    background-color: #FDCEB9;
+}
+legend{
+    font-size: 40px;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset{
+    background-color: #fcd9cb;
+    border: 5px double #7897AB;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    background-color: #fcd9cb;
+    border: 2px solid #7897AB;
+    margin: 5px;
+    font-size: medium;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+input:hover{
+    background-color: #FDCEB9;
+}
+label{
+    font-size: large;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+        </style>
+        <script type="commonjs" src="C:\Users\Asus user\Desktop\Proiect_T_W\form.js"></script>
+        <script>
+            function validare(){
+                var user = document.getElementById("email").value;
+                var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if (pattern.test(user)) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="newsletter">
+            <fieldset>
+            <legend>Newsletter:</legend>
+            <form method="post">
+                <label for="fname">Prenume:</label><br>
+                <input type="text" id="fname" name="fname" required/><br>
+                <label for="lname">Nume:</label><br>
+                <input type="text" id="lname" name="lname" required/><br>
+                <label for="mail">E-mail:</label><br>
+                <input type="text" id="email" name="email" required/><br>
+                <label>Data nașterii:</label><br>
+                <input type="date" name="birthDate" required/><br><br>
+                <input type="submit" value="Aboneaza-te!">
+              </form>  
+            </fieldset>
+        </div> 
+    </body>
+</html>    

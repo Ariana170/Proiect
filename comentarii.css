@@ -1,0 +1,42 @@
+#comm{
+    margin-bottom: 20px;
+}
+#comment-box {
+    border: none;
+    border-radius: 5px;
+    background-color: #FDCEB9;
+    width: 25%;
+    height: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#post, #del{
+    border: none;
+    border-radius: 5px;
+    background-color: #FDCEB9;
+    height: 25px;
+}
+#post:hover{
+    background-color: #D885A3;
+}
+#del:hover{
+    background-color: #D885A3;
+}
+#comment-box:hover{
+    background-color: #fcd9cb;
+}
+#unordered{
+    list-style-type:none;
+}
+#unordered li{
+    background-color: #fcd9cb;
+    border: 2px solid #7897AB;
+    min-width: 50%;
+    width: fit-content;
+    max-width: min-content;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #655D8A;
+    height: auto;
+    margin-bottom: 20px;
+}

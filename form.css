@@ -1,0 +1,34 @@
+body{
+    background-color: #FDCEB9;
+}
+legend{
+    font-size: 40px;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset{
+    background-color: #fcd9cb;
+    border: 5px double #7897AB;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    background-color: #fcd9cb;
+    border: 2px solid #7897AB;
+    margin: 5px;
+    font-size: medium;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+input:hover{
+    background-color: #FDCEB9;
+}
+label{
+    font-size: large;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}

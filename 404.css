@@ -1,0 +1,17 @@
+body{
+    background-color:#FDCEB9;
+}
+h1{
+    font-size: 30px;
+    color: #7897AB;
+    text-align: center;
+    margin-top: 5%;
+}
+img{
+    width: 50%;
+    border: 5px solid #7897AB;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}

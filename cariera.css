@@ -105,6 +105,7 @@ body{
     position: relative;
     animation: myfirst 5s linear 2s infinite alternate;
     width: 100px;
+    margin-left: 10%;
   }
   table, th, td {
     border: 2px solid #7897AB;
