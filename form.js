@@ -11,12 +11,12 @@ const app = express();
 
             app.post('/', function (req, res) {
                 const { fname, lname, email, birthDate } = req.body;
-                
+                var today = new Date();
+                var date = today.getDay().concat('.',today.getMonth(),'.',today.getFullYear());
                 var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
                 if (pattern.test(email)) 
-                    res.send(`Salut, ${lname} ${fname}! Multumim ca  te-ai abonat la Newsletter-ul nostru! Vei primi un mesaj pe adresa de email ${email}`);
+                    res.send(`Salut, ${lname} ${fname}! Multumim ca  te-ai abonat la Newsletter-ul nostru! Vei primi un mesaj pe adresa de email ${email}. (Data: ${date})`);
                 else     
                 res.sendFile('./404.html',{root: __dirname});
               });
-
             app.listen(process.env.PORT || 3003);

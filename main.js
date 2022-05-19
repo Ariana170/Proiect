@@ -9,3 +9,10 @@ function scrollFunction() {
 }
 
 
+function afis1(event){
+  alert("Articol din prezentare generala!");
+  event.stopPropagation();
+}
+function afis2(){
+  alert("Prezentare generala!");
+}

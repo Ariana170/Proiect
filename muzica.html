@@ -3,10 +3,9 @@
 <head>
 <title>Taylor Swift Muzica</title>
 <link rel="stylesheet" type="text/css" href="C:\Users\Asus user\Desktop\Proiect_T_W\muzica.css">
-<script src="C:\Users\Asus user\Desktop\Proiect_T_W\main.js"></script>
 <link rel="icon" href="favicon.jpeg">
 </head>
-<body>
+<body onclick="schimbaCuloare(event);schimbaProp(event)">
     <div id="head">
         <a href="main.html#head"><h1>Taylor Swift</h1></a>
         </div>
@@ -32,7 +31,7 @@
             <a href="https://www.taylorswift.com/"><li id="6" class="elem">Magazin</li></a>
             </ul>
             </div>    
-    <div class="album" id="1alb">
+    <div class="album" id="1alb" onclick="schimbaProp(event)">
         <a href="https://www.youtube.com/playlist?list=OLAK5uy_lJwzwxyNv7m0OZyURM5L1bw7SKX7si190"><h2>Debut / Taylor Swift</h2></a>
         <img src="debuttsalbumcover.jpg" alt="1 ALBUM">
         <p>
@@ -252,6 +251,32 @@
             <h3>closure</h3>
             <h3>evermore</h3>
         </p>
-    </div>     
+    </div>  
+    <div>
+        <form>
+            <fieldset>
+                <legend>Care va fi urmatorul album lansat de Taylor?</legend>
+            <label for="id-checkbox">Checkbox:</label><br>
+            <input type="checkbox" id="id-checkbox1">1989</input><br>
+            <input type="checkbox" id="id-checkbox2">Speak Now</input>
+            </fieldset>
+        </form>
+
+        <div id="output-box"></div>
+    </div>   
+    <script src="C:\Users\Asus user\Desktop\Proiect_T_W\main.js"></script>
+    <script src="C:\Users\Asus user\Desktop\Proiect_T_W\muzica.js"></script>
+    <script>
+    function schimbaCuloare(event) {
+        event.target.style.color='#D885A3';
+        event.target.style.opacity = '0.7';
+        if(event.target == 'body')
+           event.stopPropagation();
+    }
+    function schimbaProp(event){
+        event.currentTarget.style.backgroundColor ='#fcd9cb';
+        event.target.style.border = '5px double #D885A3';
+    }
+    </script>
 </body>
 </html>

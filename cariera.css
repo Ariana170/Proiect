@@ -1,6 +1,7 @@
 body{
     background-color:#FDCEB9;
     margin: 0;
+    
   }
   a{
     color: #D885A3;
@@ -24,6 +25,7 @@ body{
     font-size: 25px;
     padding: 1px;
     z-index: 10;
+    animation: culoare 5s linear 2s infinite alternate;
   }
 
   #menu{
@@ -96,10 +98,19 @@ body{
   @keyframes myfirst {
     0% {
       left: 10%;
+      width:100px;
+    }
+    50%{
+      width: 80px;
     }
     100% {
       left: 80%;
+      width: 100px;
     }
+  }
+  @keyframes culoare {
+    from {background-color: #D885A3;}
+    to {background-color: #fcd9cb;;}
   }
   .rotation {
     position: relative;
@@ -113,6 +124,7 @@ body{
   }
   th {
     background-color: #D885A3;
+    
   }
   table{
     font-size: small;

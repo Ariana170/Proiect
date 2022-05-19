@@ -24,6 +24,11 @@ body{
     font-size: 25px;
     padding: 1px;
     z-index: 10;
+    animation: culoare 5s linear 2s infinite alternate;
+  }
+  @keyframes culoare {
+    from {background-color: #D885A3;}
+    to {background-color: #fcd9cb;;}
   }
   h2{
     text-align: center;
@@ -114,3 +119,40 @@ body{
     margin-left: auto;
     margin-right: auto;
   }
+  legend{
+    font-size: 20px;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset{
+    background-color: #fcd9cb;
+    border: 5px double #7897AB;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    background-color: #fcd9cb;
+    border: 2px solid #7897AB;
+    margin: 5px;
+    font-size: medium;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+input:hover{
+    background-color: #FDCEB9;
+}
+label{
+    font-size: large;
+    color: #7897AB;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+#output_box{
+  text-align: center;
+  margin-top: 5px;
+  font-size: large;
+  color: #7897AB;
+}

@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="C:\Users\Asus user\Desktop\Proiect_T_W\main.css" />
 <link rel="stylesheet" type="text/css" href="C:\Users\Asus user\Desktop\Proiect_T_W\comentarii.css" />
 <link rel="icon" href="favicon.jpeg" />
-<script src="C:\Users\Asus user\Desktop\Proiect_T_W\main.js"></script>
+
 <script src="C:\Users\Asus user\Desktop\Proiect_T_W\galerie_poze.js"></script>
 <script src="C:\Users\Asus user\Desktop\Proiect_T_W\comentarii.js"></script>
 </head>
@@ -36,8 +36,8 @@
 </ul>
 </div>
 <h2 class="subtitlu">Prezentare generală:</h2>
-<div class="imagini">
-    <div id="pr1">
+<div class="imagini" id="Prezentare" onclick="afis2()">
+    <div id="pr1" onclick="afis1(event)">
         <img src="ts1redalt.jpg" alt="RED Photo" class="stanga">
         <p class="paragraf">
             
@@ -59,7 +59,7 @@
              
         </p>  
     </div>    
-    <div id="pr2">
+    <div id="pr2" onclick="afis1(event)">
     <img src="tscardiganmv.jpg" alt="Cardigan MV" class="dreapta">
     <p class="paragraf">
         &nbsp;&nbsp;&nbsp;Muzica acesteia se întinde pe mai multe genuri, in principal country, pop si indie. Aceasta a jucat în mai multe filme (Cats(2020), 
@@ -73,7 +73,7 @@
         Celine Dion si multi altii.
     </p>
     </div>
-    <div  id="pr3">
+    <div  id="pr3" onclick="afis1(event)">
     <img src="tsbmas2019.jpg" alt="BMA'S 2019" class="stanga">
     <p id="speack">
         “When Fearless did win Album of the Year at the Grammys and I did become the youngest solo artist to ever win the award, with that win 
@@ -139,5 +139,6 @@
   <div id="newsletter">
       <h2 class="subtitlu" id="new">Aboneaza-te la newsletter <a href="http://localhost:3003/">aici</a>!!!</h2>
 </div> 
+<script src="C:\Users\Asus user\Desktop\Proiect_T_W\main.js"></script>
 </body>
 </html>
